@@ -165,11 +165,17 @@ var user1 = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+for (var i in user1) {
+  if (!user1[i]) {
+    delete user1[i];
+  }
+}  //Code Here
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+user1.name = "Shea";
+user1.pwHash = "asdjkfn123";
+user1.username = "Shea_Close";  //Code Here
 
 
 
@@ -193,11 +199,12 @@ var user2 = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";  //Code Here
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
+user2.sayName();  //Code Here
 
 
 
@@ -209,17 +216,23 @@ var user2 = {
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+var methodCollection = {};  //Code Here
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
-
+ methodCollection.alertHello = function() {
+   alert("hello");
+ };
+ methodCollection.logHello = function() {
+   console.log("hello");
+ };
   //Code Here
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();   //Code Here
 
 
 
