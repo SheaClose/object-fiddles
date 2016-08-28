@@ -33,7 +33,8 @@ favoriteThings.brand = "Converse";  //Code here
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
-  //Code here
+favoriteThings.food = "Lettuce";
+favoriteThings.book = "50 Shades of Gray";  //Code here
 
 
 
