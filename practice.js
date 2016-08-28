@@ -77,11 +77,24 @@ console.log(backPack);  //Code here
 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var alsoMe = {
+  name: "Shea",
+  age: 33,
+  height: "5' 8\"",
+  gender: "Male",
+  married: true,
+  eyeColor: "Blue",
+  hairColor: "Brown"
+};  //Code Here
+
+
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+for (var i in alsoMe) {
+ alert(alsoMe[i]);
+}  //Code Here
+
 
 
 
@@ -93,11 +106,19 @@ console.log(backPack);  //Code here
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+  var album = {
+    electedEnemy: "3:01",
+    forOurFriends: "3:16",
+    printedWord: "2:51",
+    battleFatigue: "2:24",
+    combatZone: "2:47"
+  };//Code Here
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+for (var i in album) {
+  alert(i);
+}  //Code Here
 
 
 
