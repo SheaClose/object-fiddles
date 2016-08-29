@@ -243,17 +243,27 @@ methodCollection.logHello();   //Code Here
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
-
-
-
-//NEXT PROBLEM
+function makePerson(name, birthday, ssn) {
+  var personObj = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  };
+  return personObj;
+}//NEXT PROBLEM
 
 
 
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
-  //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  var cardObj = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  };
+  return cardObj;
+}  //Code Here
 
 
 
