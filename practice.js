@@ -277,3 +277,9 @@ function makeCard(cardNumber, expirationDate, securityCode) {
 */
 
   //Code Here
+function bindCard(personObj, cardObj) {
+  var obj3 = {};
+  for (var i in personObj) {obj3[i] = personObj[i];}
+  for (var j in cardObj) {obj3[j] = cardObj[j];}
+  return obj3;
+}
